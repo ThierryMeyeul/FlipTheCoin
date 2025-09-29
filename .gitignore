@@ -1,0 +1,9 @@
+*.env
+
+*.fig
+*.xd
+*.hintrc
+
+.DS_Store
+.prettierignore
+

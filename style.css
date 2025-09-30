@@ -27,7 +27,7 @@ body {
 
 .title {
     font-weight: bolder;
-    font-size: 4rem;
+    font-size: 60px;
     text-shadow: 2px 2px 0px #35383f;
     -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: #35383f;

@@ -50,6 +50,7 @@ body {
     cursor: pointer;
     border-radius: 50%;
     transition: transform .3s;
+    user-select: none;
 }
 
 .text {

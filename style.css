@@ -2,49 +2,82 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    margin-bottom: 100px;
 }
 
 body {
-    background-color: #404A65;
-    color: #ECEDF0;
-    font-family: 'Kanit', sans-serif;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #414a64;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    overflow: hidden;
+    color: #ECEDF0;
+    align-items: center;
+    height: 100vh;
 }
 
-h1 {
-    font-weight: 600;
+.title {
+    font-weight: bolder;
     font-size: 4rem;
     text-shadow: 2px 2px 0px #35383f;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: #35383f;
+    font-style: normal;
 }
 
-.header p{
-    font-weight: 600;
-    font-size: 24px;
+.coin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
 }
 
-#btn {
-    font-weight: 1000;
-    font-size: 1rem;
-    box-shadow: 0px 4px 0px 0px #23649b;
-    color: #ECEDF0;
-    background-color: #23649b;
-    font-family: 'kanit', sans-serif;
-    border: none;
-    width: 140px;
-    border-radius: 5px;
-    height: 40px;
+.rotate {
+    transform: rotateY(360deg);
+}
+
+#coin {
     cursor: pointer;
+    border-radius: 50%;
+    transition: transform .3s;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: 600;
 }
 
 #result {
-    color: #ECEDF0;
-    font-weight: 600;
+    margin: 50px;
     font-size: 24px;
+}
+
+button p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ECEDF0;
+    margin: 7px;
+    user-select: none;
+}
+
+#btn {
+    background-color: #1F6FB0;
+    border: none;
+    box-shadow: 0px 4px 0px 0px #23649b;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 7px;
+    width: 150px;
+    cursor: pointer;
 }
 
 #btn:active {

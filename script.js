@@ -1,15 +1,26 @@
 const btn = document.getElementById('btn')
 const textResult = document.getElementById('result')
-const image = document.querySelector('.image')
+const coin = document.getElementById('coin')
+
+btn.addEventListener('click', () => flipCoin())
+coin.addEventListener('click', () => flipCoin())
 
 
-btn.addEventListener('click', () => {
+const flipCoin = () => {
     const result = Math.random() < 0.5 ? "Heads" : 'Tails'
+   
     
-    textResult.textContent = result
     if (result === 'Heads') {
-        image.src = "resources/heads.svg"
+        coin.src = "resources/heads.svg"
     } else {
-        image.src = 'resources/tails.svg'
+        coin.src = 'resources/tails.svg'
     }
-})
+    
+    if (coin.classList.contains('rotate')) {
+        coin.classList.remove('rotate')
+    } else {
+        coin.classList.add('rotate')
+    }
+
+    textResult.textContent = result
+}
